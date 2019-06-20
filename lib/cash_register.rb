@@ -19,6 +19,9 @@ class CashRegister
       discount_variable = 100 - @discount
       discount_variable = discount_variable.to_f / 100
       @total = @total * discount_variable
+      puts ""
+    else 
+      puts ""
     end 
   end 
     
