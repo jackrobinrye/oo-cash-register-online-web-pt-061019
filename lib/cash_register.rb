@@ -19,7 +19,7 @@ class CashRegister
       discount_variable = 100 - @discount
       discount_variable = discount_variable.to_f / 100
       @total = @total * discount_variable
-      "After the discount, the total comes out to $#{@total}."
+      "After the discount, the total comes out to $#{@total.to_i}."
     else 
       "There is no discount to apply."
     end 
