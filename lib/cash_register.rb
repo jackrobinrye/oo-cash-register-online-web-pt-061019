@@ -6,4 +6,4 @@ class CashRegister
     @discount = discount 
   end 
   
-  
+end 
