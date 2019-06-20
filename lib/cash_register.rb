@@ -35,7 +35,7 @@ class CashRegister
   end 
     
   def void_last_transaction
-    @previous_total
+    @total = @previous_total
     binding.pry
   end 
   
