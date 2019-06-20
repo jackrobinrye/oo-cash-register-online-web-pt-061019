@@ -14,5 +14,10 @@ class CashRegister
     @total += price * quantity
   end 
   
+  def apply_discount
+    if @discount != 0 
+      discount_variable = 100 - @discount
+      discount_variable = discount_variable
+    
   
 end 
