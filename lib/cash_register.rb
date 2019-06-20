@@ -7,6 +7,7 @@ class CashRegister
   def initialize(discount=0, total=0)
     @discount = discount 
     @total = total
+    @previous_total = 0
     @items = []
   end 
   
@@ -14,7 +15,7 @@ class CashRegister
     quantity.times do 
       @items << title 
     end 
-    previous_total = @total
+    @previous_total = @total
     @total += price * quantity
   end 
   
@@ -33,6 +34,8 @@ class CashRegister
     @items
   end 
     
-    
+  def void_last_transaction
+    @previous_total
+  end 
   
 end 
