@@ -10,9 +10,9 @@ class CashRegister
     @items = []
   end 
   
-  def add_item(item_title, price, quantity=1)
+  def add_item(title, price, quantity=1)
     quanitity.times do 
-      @items << item_title 
+      @items << title 
     end 
     previous_total = @total
     @total += price * quantity
