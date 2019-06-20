@@ -18,7 +18,7 @@ class CashRegister
     if @discount != 0 
       discount_variable = 100 - @discount
       discount_variable = discount_variable.to_f / 100
-      binding.pry
+      @total = @total * discount_variable
     end 
   end 
     
