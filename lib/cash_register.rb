@@ -19,9 +19,9 @@ class CashRegister
       discount_variable = 100 - @discount
       discount_variable = discount_variable.to_f / 100
       @total = @total * discount_variable
-      puts ""
+      puts "After the discount, the total comes out to $#{@total}."
     else 
-      puts ""
+      puts "There is no discount to apply."
     end 
   end 
     
