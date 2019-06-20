@@ -2,4 +2,8 @@ require "pry"
 
 class CashRegister 
   
-  initialize 
+  def initialize(discount)
+    @discount = discount 
+  end 
+  
+  
