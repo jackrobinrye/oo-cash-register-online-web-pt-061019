@@ -7,9 +7,11 @@ class CashRegister
   def initialize(discount=0, total=0)
     @discount = discount 
     @total = total
+    @items = []
   end 
   
-  def add_item(title, price, quantity=1)
+  def add_item(item_title, price, quantity=1)
+    @items << item_title 
     previous_total = @total
     @total += price * quantity
   end 
@@ -24,6 +26,11 @@ class CashRegister
       "There is no discount to apply."
     end 
   end 
+    
+  def items
+    @items
+  end 
+    
     
   
 end 
