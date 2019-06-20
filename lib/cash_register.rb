@@ -17,7 +17,10 @@ class CashRegister
   def apply_discount
     if @discount != 0 
       discount_variable = 100 - @discount
-      discount_variable = discount_variable
+      discount_variable = discount_variable.to_f / 100
+      binding.pry
+    end 
+  end 
     
   
 end 
